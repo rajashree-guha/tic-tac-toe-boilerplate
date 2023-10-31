@@ -17,8 +17,8 @@ let boxelement = document.querySelectorAll(".box");
 
 // providing event listener to all the boxes
 
-for (elem of boxelement) {
-  elem.addEventListener("click", handleClick);
+for (element of boxelement) {
+  element.addEventListener("click", handleClick);
 }
 
 let click = 0;
@@ -53,10 +53,12 @@ function handleClick(event) {
 }
 
 // declaring variable 
+
 let resultbox = document.getElementById("result");
 let messagebox = document.getElementById("message");
 
 // declaring function result 
+
 function result(playerArray, player) {
 for (let i = 0; i < winningCombinations.length; i++) {
 
@@ -76,6 +78,7 @@ for (let i = 0; i < winningCombinations.length; i++) {
   }
 }
 
+// the page will reload when the button will be clicked
 let playbtn = document.getElementById("button")
 
 playbtn.onclick=()=>{
